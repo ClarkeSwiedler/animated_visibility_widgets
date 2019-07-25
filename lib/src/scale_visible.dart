@@ -33,7 +33,7 @@ class ScaleVisible extends StatefulWidget {
     this.alignment = Alignment.center,
     this.duration = const Duration(milliseconds: 300),
     this.curve = Curves.linear,
-  });
+  }) : super(key: key);
 
   @override
   _ScaleVisibleState createState() => _ScaleVisibleState();

@@ -38,7 +38,7 @@ class SizeVisible extends StatefulWidget {
     this.axisAlignment = 0.0,
     this.duration = const Duration(milliseconds: 300),
     this.curve = Curves.linear,
-  });
+  }) : super(key: key);
 
   @override
   _SizeVisibleState createState() => _SizeVisibleState();

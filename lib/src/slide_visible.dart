@@ -13,7 +13,7 @@ class SlideVisible extends StatefulWidget {
 
   ///The [Offset] of this widget when [visible] is false.
   ///
-  ///Defaults to ```Offset(0, -1.1)```, which will slide the widget up by 
+  ///Defaults to ```Offset(0, -1.1)```, which will slide the widget up by
   ///slightly more than its height when the widget is hidden.
   final Offset hiddenOffset;
 
@@ -40,7 +40,7 @@ class SlideVisible extends StatefulWidget {
     this.visibleOffset = const Offset(0, 0),
     this.duration = const Duration(milliseconds: 300),
     this.curve = Curves.linear,
-  });
+  }) : super(key: key);
 
   @override
   _SlideVisibleState createState() => _SlideVisibleState();
@@ -54,7 +54,7 @@ class _SlideVisibleState extends State<SlideVisible>
   @override
   void initState() {
     super.initState();
-    
+
     _controller = AnimationController(vsync: this, duration: widget.duration);
 
     _slideAnimation =

@@ -27,7 +27,7 @@ class FadeVisible extends StatefulWidget {
     @required this.child,
     this.duration = const Duration(milliseconds: 300),
     this.curve = Curves.linear,
-  });
+  }) : super(key: key);
 
   @override
   _FadeVisibleState createState() => _FadeVisibleState();
